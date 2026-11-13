@@ -84,7 +84,7 @@ header {
             rgba(0, 0, 0, 0.20),
             rgba(0, 0, 0, 0.45)
         ),
-        url("imagen/boa nerges2.jpg");
+        url("imagen/foto.jpeg");
 
     background-size: cover;
     background-position: center 40%;
@@ -542,4 +542,180 @@ footer p {
         padding: 60px 7%;
     }
 
+}
+
+
+/* IMAGEM PRINCIPAL */
+.hero {
+    background: #111111;
+    padding: 0;
+    height: auto;
+    min-height: auto;
+    display: block;
+}
+
+.hero-imagem {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    margin: 0;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+
+/* MELHORIA DOS CARTÕES MUSICAIS */
+
+.musicas {
+    background-color: #0b0b0b;
+}
+
+.musicas-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.musicas-container h2 {
+    color: #d4af37;
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.musicas-descricao {
+    color: #cccccc;
+    max-width: 650px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+}
+
+.musicas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.musica-card {
+    background: #171717;
+    border: 1px solid #9c812b;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: left;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.musica-card:hover {
+    border-color: #d4af37;
+}
+.musica-card h3 {
+    color: #d4af37;
+    font-size: 18px;
+    margin: 5px 0 15px;
+}
+
+.musica-card video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: #000;
+    border-radius: 8px;
+}
+
+/* ADAPTAÇÃO PARA TELEMÓVEIS */
+@media (max-width: 768px) {
+    .musicas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .musicas-container h2 {
+        font-size: 28px;
+    }
+}
+
+.musica-card video {
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+.musica-card audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.musica-card audio {
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+/* MELHORIA DA SECÇÃO DE MÚSICAS */
+
+.musicas {
+    background-color: #0b0b0b;
+    padding: 80px 20px;
+}
+
+.musicas-container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.musicas-container h2 {
+    color: #d4af37;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.musicas-descricao {
+    color: #ccc;
+    max-width: 650px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+}
+
+.musicas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.musica-card {
+    background: #171717;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 12px;
+    padding: 25px 20px;
+    transition: 0.3s ease;
+}
+
+.musica-card:hover {
+    transform: translateY(-5px);
+    border-color: #d4af37;
+}
+
+.musica-card h3 {
+    color: #d4af37;
+    margin-bottom: 18px;
+    font-size: 19px;
+}
+
+.musica-card audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* ADAPTAÇÃO PARA TELEMÓVEIS */
+
+@media (max-width: 768px) {
+    .musicas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .musicas {
+        padding: 55px 15px;
+    }
 }
